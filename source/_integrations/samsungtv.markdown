@@ -51,6 +51,7 @@ After saving the YAML configuration, the TV must be turned on _before_ launching
 #### Wake up TV
 
 To wake up the TV when switched off you can use the [wake-on-lan](/integrations/wake_on_lan/) integration and call a service. This is not possible with every device.
+Also, Some devices don't recognize ".send_magic_packet", they just need "wake_on_lan".
 
 ```yaml
 wake_on_lan:
